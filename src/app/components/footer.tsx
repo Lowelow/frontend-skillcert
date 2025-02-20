@@ -1,17 +1,10 @@
-import { Poppins } from "next/font/google";
 import Image from "next/image";
 import Link from "next/link";
-const poppins = Poppins({
-  subsets: ["latin"],
-  weight: ["700", "400"],
-});
 
 export default function Footer() {
   return (
     <footer className="w-full bg-gray-800 pb-[46.91px]">
-      <section
-        className={`${poppins.className} text-gray-300 flex justify-evenly`}
-      >
+      <section className={`font-poppins text-gray-300 flex justify-evenly`}>
         {/* About SkillCert */}
         <article className="w-[404px]">
           <h2>About SkillCert</h2>
@@ -102,7 +95,7 @@ export default function Footer() {
       <hr className="max-w-[1800px] bg-gray-300 h-[1px] mt-[61.28px] px-[60px] mx-auto mb-[39.48px]" />
 
       {/* Copyright */}
-      <p className={`${poppins.className} text-center text-gray-300`}>
+      <p className={`font-poppins text-center text-gray-300`}>
         Copyright &#169; {new Date().getFullYear()} - SkillCert
       </p>
     </footer>
