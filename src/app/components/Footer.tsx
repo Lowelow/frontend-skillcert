@@ -26,7 +26,7 @@ export default function Footer() {
         <article>
           <h2>Quick Links</h2>
           <nav aria-label="Quick links">
-            <div className="flex xl:gap-[282px] lg:gap-[100px]">
+            <div className="flex">
               <div className="flex flex-col">
                 <a href="/about-us" className="hover:text-gray-400">
                   About us
@@ -41,20 +41,27 @@ export default function Footer() {
                   Blog
                 </a>
               </div>
-              <div className="flex flex-col">
-                <a href="/faq" className="hover:text-gray-400">
-                  FAQ
-                </a>
-                <a href="/contact-us" className="hover:text-gray-400">
-                  Contact Us
-                </a>
-                <a href="/terms-of-service" className="hover:text-gray-400">
-                  Terms of Service
-                </a>
-                <a href="/privacy-policy" className="hover:text-gray-400">
-                  Privacy Policy
-                </a>
-              </div>
+            </div>
+          </nav>
+        </article>
+
+        {/* Support */}
+        <article>
+          <h2>Support</h2>
+          <nav aria-label="Support">
+            <div className="flex flex-col">
+              <a href="/faq" className="hover:text-gray-400">
+                FAQ
+              </a>
+              <a href="/contact-us" className="hover:text-gray-400">
+                Contact Us
+              </a>
+              <a href="/terms-of-service" className="hover:text-gray-400">
+                Terms of Service
+              </a>
+              <a href="/privacy-policy" className="hover:text-gray-400">
+                Privacy Policy
+              </a>
             </div>
           </nav>
         </article>
