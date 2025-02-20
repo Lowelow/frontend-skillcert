@@ -26,7 +26,7 @@ export default function Footer() {
         <article>
           <h2>Quick Links</h2>
           <nav aria-label="Quick links">
-            <div className="flex gap-[282px]">
+            <div className="flex xl:gap-[282px] lg:gap-[100px]">
               <div className="flex flex-col">
                 <a href="/about-us" className="hover:text-gray-400">
                   About us
@@ -92,7 +92,7 @@ export default function Footer() {
       </section>
 
       {/* Divider */}
-      <div className="max-w-[1800px] bg-gray-300 h-[1px] mt-[61.28px] px-[60px] mx-auto mb-[39.48px]" />
+      <hr className="max-w-[1800px] bg-gray-300 h-[1px] mt-[61.28px] px-[60px] mx-auto mb-[39.48px]" />
 
       {/* Copyright */}
       <p className={`${poppins.className} text-center text-gray-300`}>
