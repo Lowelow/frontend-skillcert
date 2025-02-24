@@ -3,7 +3,7 @@ import Link from "next/link";
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-gray-800 pb-[46.91px]">
+    <footer className="w-full bg-gray-800 h-[438px] font-normal">
       <section className={`font-poppins text-gray-300 flex justify-evenly`}>
         {/* About SkillCert */}
         <article className="w-[404px]">
@@ -20,19 +20,11 @@ export default function Footer() {
           <h2>Quick Links</h2>
           <nav aria-label="Quick links">
             <div className="flex">
-              <div className="flex flex-col">
-                <a href="/about-us" className="hover:text-gray-400">
-                  About us
-                </a>
-                <a href="/courses" className="hover:text-gray-400">
-                  Courses
-                </a>
-                <a href="/instructors" className="hover:text-gray-400">
-                  Instructors
-                </a>
-                <a href="/blog" className="hover:text-gray-400">
-                  Blog
-                </a>
+              <div className="flex flex-col gap-[7px]">
+                <a href="/about-us">About us</a>
+                <a href="/courses">Courses</a>
+                <a href="/instructors">Instructors</a>
+                <a href="/blog">Blog</a>
               </div>
             </div>
           </nav>
@@ -42,19 +34,11 @@ export default function Footer() {
         <article>
           <h2>Support</h2>
           <nav aria-label="Support">
-            <div className="flex flex-col">
-              <a href="/faq" className="hover:text-gray-400">
-                FAQ
-              </a>
-              <a href="/contact-us" className="hover:text-gray-400">
-                Contact Us
-              </a>
-              <a href="/terms-of-service" className="hover:text-gray-400">
-                Terms of Service
-              </a>
-              <a href="/privacy-policy" className="hover:text-gray-400">
-                Privacy Policy
-              </a>
+            <div className="flex flex-col gap-[7px]">
+              <a href="/faq">FAQ</a>
+              <a href="/contact-us">Contact Us</a>
+              <a href="/terms-of-service">Terms of Service</a>
+              <a href="/privacy-policy">Privacy Policy</a>
             </div>
           </nav>
         </article>
@@ -92,10 +76,12 @@ export default function Footer() {
       </section>
 
       {/* Divider */}
-      <hr className="max-w-[1800px] bg-gray-300 h-[1px] mt-[61.28px] px-[60px] mx-auto mb-[39.48px]" />
+      <hr className="max-w-[1800px] bg-gray-300 h-[1px] mt-[61.28px] mb-[46.91] px-[60px] mx-auto" />
 
       {/* Copyright */}
-      <p className={`font-poppins text-center text-gray-300`}>
+      <p
+        className={`font-poppins text-center text-gray-300 leading-[20px] text-[20px]`}
+      >
         Copyright &#169; {new Date().getFullYear()} - SkillCert
       </p>
     </footer>

@@ -27,7 +27,7 @@ footer {
     }
 
     a {
-      @apply cursor-pointer;
+      @apply cursor-pointer hover:text-gray-400 text-[20px] leading-[30px];
     }
   }
 }
